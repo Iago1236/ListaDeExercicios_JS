@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numero 7</title>
+</head>
+<body>
+    <h1>Soma de Multiplos de 3 ou 5</h1>
+    <button onclick="calcularSoma()">Calcular Soma</button> 
+    <div id="resultado"></div>                       
+    <script>
+        function calcularSoma() {
+            let soma = 0;
+            for (let i = 0;i < 1000; i++) {
+                if (i % 3 === 0 || i % 5 === 0){
+                    soma += 1;
+                }
+            }
+            alert("A soma de todods os múltiplos de 3 ou 5 abaixo de 1000 é: "+soma.toFixed())
+        }
+    </script>
+</body>
+</html>
